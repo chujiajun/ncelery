@@ -18,11 +18,10 @@ PROJECT_PATH, _ = os.path.split(CURRENT_DIR)
 MAIN_NAME = "Pandaria"
 
 #URL of the default broker used
-BROKER = 'amqp://guest@espp.broker.com:5672//'
+BROKER = 'amqp://guest@localhost:5672//'
 
 #The result store backend class, or the name of the backend class to use
-BACKEND = 'redis://espp.redis.com:6379/1'
-
+BACKEND = 'redis://localhost:6379/0'
 #include app
 INCLUDE_APP = []
 

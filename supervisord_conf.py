@@ -10,7 +10,7 @@
 # -----------------------------------------------------
 
 #celery configuration
-CELERY_USER = "top"
+CELERY_USER = "ubuntu"
 CELERY_LOG_LEVEL = "INFO"
 BEAT_IS_ON = False #是否开启celery beat
 BEAT_PID_FILE = '/var/log/2ncelery/celery_beat.pid' #celery beat pid文件

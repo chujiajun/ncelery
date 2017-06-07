@@ -11,8 +11,10 @@ ncelery是一个celery快速开发项目，目的在于快速增加celery task�
 ### Install
     $ pip install celery
     $ pip install requests
-	$ pip install supervisor
-	$ git clone git@github.com:Acey9/ncelery.git
+    $ pip install supervisor
+    $ git clone git@github.com:Acey9/ncelery.git
+    $ sudo pip install redis (redis backend need redis-py)
+    $ pip install celery[redis]
 
 ### Configuration
 	================================
@@ -24,10 +26,10 @@ ncelery是一个celery快速开发项目，目的在于快速增加celery task�
 	MAIN_NAME = "Pandaria"
 
 	#URL of the default broker used
-	BROKER = 'amqp://guest@espp.broker.com:5672//'
+	BROKER = 'amqp://guest@localhost:5672//'
 
 	#The result store backend class, or the name of the backend class to use
-	BACKEND = 'redis://espp.redis.com:6379/1'
+	BACKEND = 'redis://localhost:6379/1'
          
 	#Periodic Tasks 
 	CELERY_TIMEZONE = 'Asia/Shanghai'
